@@ -19,11 +19,6 @@ namespace budilnik
             context.lblCurrentTime.Text = "Будильник сработал!\n";
             context.lblCurrentTime.Text += DateTime.Now.ToString("Время: HH:mm:ss");
 
-
-            //// Воспроизведение звука
-            //SoundPlayer player = new SoundPlayer("C:\\Users\\diank\\Downloads\\free-sound-effects-AA2G06A6.wav"); 
-            //player.PlayLooping();
-
             context.btnSnooze.Visible = true;
             context.btnStopAlarm.Visible = true;
             context.btnSetAlarm.Visible = false;

@@ -22,8 +22,6 @@ namespace budilnik
             context.panelBackground.BackColor = Color.Yellow; // Желтый
             context.lblCurrentTime.Text = "Сигнал отложен!\n";
             context.lblCurrentTime.Text += DateTime.Now.ToString("Время: HH:mm:ss");
-            // Установим время ожидания в 30 секунд
-            DateTime snoozeEndTime = DateTime.Now.AddSeconds(30);
 
             // Установим время ожидания в 30 секунд
             snoozeTimer = new Timer((e) =>
